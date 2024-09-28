@@ -211,7 +211,7 @@
                                 <figure class="portfolio-item">
                                     <img src="../../../assets/images/portfolio/1-small.png" data-bp="images/portfolio/1.jpg" />
                                     <figcaption>
-                                        <h4 class="h5 mb-0">Web Design</h4>
+                                        <h4 class="h5 mb-0">WebSite Design</h4>
                                         <div>Web Site</div>
                                     </figcaption>
                                 </figure>
