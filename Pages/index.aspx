@@ -1,6 +1,38 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="MyPortfolio.Pages.index" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style>
+        .img-hor {
+            -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            filter: FlipH;
+            -ms-filter: "FlipH";
+        }
+    </style>
+    <script type="text/javascript">
+        function btnSubmitClick() {
+
+            Swal.fire({
+                title: "Thank You For Messaging Me !!!",
+                showClass: {
+                    popup: `
+      animate__animated
+      animate__fadeInUp
+      animate__faster
+    `
+                },
+                hideClass: {
+                    popup: `
+      animate__animated
+      animate__fadeOutDown
+      animate__faster
+    `
+                }
+            });
+        }
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="page-content">
@@ -22,7 +54,6 @@
                                             <ul class="nav justify-content-left">
                                                 <li class="nav-item"><a class="nav-link" href="https://github.com/Sankalp8080" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a></li>
                                                 <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/sankalp-panchal-6ab344159/" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></li>
-
                                             </ul>
                                         </nav>
                                     </div>
@@ -40,8 +71,10 @@
                         <div class="col-md-6">
                             <h2 class="h4 my-2">Hello! I’m Sankalp Panchal.</h2>
                             <p>
-                                🚀 Aspiring Full Stack Developer | Passionate about ASP.NET | UI/UX Enthusiast | 3D Modeling Enthusiast | Lifelong Learner 🌟
+                                <b>🚀 Aspiring Full Stack Developer | Passionate about ASP.NET | UI/UX Enthusiast | 3D Modeling Enthusiast | Lifelong Learner 🌟
+                                </b>
 
+                                <br />
                                 <br />
                                 💻 <b>Full Stack Development</b>: I'm enthusiastic about ASP.NET and eager to learn more. I enjoy building web applications from start to finish.
   <br />
@@ -81,7 +114,7 @@
                             </div>
                         </div>
                         <div class="col-md-5 offset-md-1" data-aos="fade-left" data-aos-delay="100">
-                            <img class="avatar img-fluid mt-2" src="../../../assets/images/avatar.jpg" width="400" height="400" alt="Sankalp Panchal" />
+                            <img class="avatar img-fluid mt-2 img-hor" src="../../../assets/images/illustrations/hello.svg" width="500" height="500" alt="Sankalp Panchal" />
                         </div>
                     </div>
                 </div>
@@ -199,152 +232,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section px-2 px-lg-4 pt-5" id="portfolio">
-                <div class="container">
-                    <div class="text-center mb-5">
-                        <h2 class="marker marker-center">Portfolio </h2>
-                    </div>
-                    <div class="grid bp-gallery pb-3" data-aos="zoom-in-up" data-aos-delay="100">
-                        <div class="grid-sizer"></div>
-                        <div class="grid-item">
-                            <a href="https://github.com/Sankalp8080/Ecommerce-CRUD">
-                                <figure class="portfolio-item">
-                                    <img src="../../../assets/images/portfolio/1-small.png" data-bp="images/portfolio/1.jpg" />
-                                    <figcaption>
-                                        <h4 class="h5 mb-0">WebSite Design</h4>
-                                        <div>Web Site</div>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="grid-item">
-                            <a href="https://github.com/Sankalp8080">
-                                <figure class="portfolio-item">
-                                    <img src="../../../assets/images/portfolio/2-small.png" data-bp="images/portfolio/2.jpg" data-caption="Example of an optional caption." />
-                                    <figcaption>
-                                        <h4 class="h5 mb-0">Web Development</h4>
-                                        <div>GitHub.com</div>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                    
-               
-                     
-                        <div class="grid-item">
-                            <a href="https://github.com/Sankalp8080/CalculatorApp-IN-MAUI">
-                                <figure class="portfolio-item">
-                                    <img src="../../../assets/images/portfolio/6-small.png" data-bp="images/portfolio/6.jpg" />
-                                    <figcaption>
-                                        <h4 class="h5 mb-0">App Development</h4>
-                                        <div>MAUI</div>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="grid-item">
-                            <a href="https://www.figma.com/design/5EP4DrmRW53OtTbU3STUgz/burger?node-id=0-1&t=DciWK1Q6qdQwYMvK-1">
-                                <figure class="portfolio-item">
-                                    <img src="../../../assets/images/portfolio/7-small.png" data-bp="images/portfolio/7.jpg" />
-                                    <figcaption>
-                                        <h4 class="h5 mb-0">App Design</h4>
-                                        <div>Figma</div>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="grid-item">
-                            <a href="https://github.com/Sankalp8080/Basic_Todo_API">
-                                <figure class="portfolio-item">
-                                    <img src="../../../assets/images/portfolio/8-small.png" data-bp="images/portfolio/8.jpg" />
-                                    <figcaption>
-                                        <h4 class="h5 mb-0">API</h4>
-                                        <div>API</div>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section px-3 px-lg-4 pt-5" id="experience">
-                <div class="container-narrow">
-                    <div class="text-center mb-5">
-                        <h2 class="marker marker-center">Experience</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card mb-3" data-aos="fade-right" data-aos-delay="100">
-                                <div class="card-header px-3 py-2">
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <h3 class="h5 mb-1">UI/UX Design</h3>
-                                            <div class="text-muted text-small">Designerr Inc. <small>(2012-2014)</small></div>
-                                        </div>
-                                        <img src="../../../assets/images/services/ui-ux.svg" width="48" height="48" alt="ui-ux" />
-                                    </div>
-                                </div>
-                                <div class="card-body px-3 py-2">
-                                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-                                    <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card mb-3" data-aos="fade-left" data-aos-delay="300">
-                                <div class="card-header px-3 py-2">
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <h3 class="h5 mb-1">App Development</h3>
-                                            <div class="text-muted text-small">MakeMyApp LLC. <small>(2015-2018)</small></div>
-                                        </div>
-                                        <img src="../../../assets/images/services/app-development.svg" width="48" height="48" alt="app development" />
-                                    </div>
-                                </div>
-                                <div class="card-body px-3 py-2">
-                                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-                                    <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card mb-3" data-aos="fade-right" data-aos-delay="200">
-                                <div class="card-header px-3 py-2">
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <h3 class="h5 mb-1">Web Design</h3>
-                                            <div class="text-muted text-small">Webbie LLC. <small>(2018-2020)</small></div>
-                                        </div>
-                                        <img src="../../../assets/images/services/web-design.svg" width="48" height="48" alt="web design" />
-                                    </div>
-                                </div>
-                                <div class="card-body px-3 py-2">
-                                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-                                    <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card mb-3" data-aos="fade-left" data-aos-delay="400">
-                                <div class="card-header px-3 py-2">
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <h3 class="h5 mb-1">Full Stack Development</h3>
-                                            <div class="text-muted text-small">Coder Inc. <small>(2020-2021)</small></div>
-                                        </div>
-                                        <img src="../../../assets/images/services/full-stack.svg" width="48" height="48" alt="full stack" />
-                                    </div>
-                                </div>
-                                <div class="card-body px-3 py-2">
-                                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-                                    <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section px-3 px-lg-4 pt-5" id="testimonials">
+            <div class="section px-3 px-lg-4 pt-5" id="certification">
                 <div class="container-narrow">
                     <div class="text-center mb-5">
                         <h2 class="marker marker-center">Certifications</h2>
@@ -436,8 +324,128 @@
                     </div>
                 </div>
             </div>
+            <div class="section px-2 px-lg-4 pt-5" id="portfolio">
+                <div class="container">
+                    <div class="text-center mb-5">
+                        <h2 class="marker marker-center">Portfolio </h2>
+                    </div>
+                    <div class="grid bp-gallery pb-3" data-aos="zoom-in-up" data-aos-delay="100">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item">
+                            <a href="https://github.com/Sankalp8080/Ecommerce-CRUD">
+                                <figure class="portfolio-item">
+                                    <img src="../../../assets/images/portfolio/1-small.png" data-bp="images/portfolio/1.jpg" />
+                                    <figcaption>
+                                        <h4 class="h5 mb-0">WebSite Design</h4>
+                                        <div>Web Site</div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="https://github.com/Sankalp8080">
+                                <figure class="portfolio-item">
+                                    <img src="../../../assets/images/portfolio/2-small.png" data-bp="images/portfolio/2.jpg" data-caption="Example of an optional caption." />
+                                    <figcaption>
+                                        <h4 class="h5 mb-0">Web Development</h4>
+                                        <div>GitHub.com</div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
 
- 
+
+
+                        <div class="grid-item">
+                            <a href="https://github.com/Sankalp8080/CalculatorApp-IN-MAUI">
+                                <figure class="portfolio-item">
+                                    <img src="../../../assets/images/portfolio/6-small.png" data-bp="images/portfolio/6.jpg" />
+                                    <figcaption>
+                                        <h4 class="h5 mb-0">App Development</h4>
+                                        <div>MAUI</div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="https://www.figma.com/design/5EP4DrmRW53OtTbU3STUgz/burger?node-id=0-1&t=DciWK1Q6qdQwYMvK-1">
+                                <figure class="portfolio-item">
+                                    <img src="../../../assets/images/portfolio/7-small.png" data-bp="images/portfolio/7.jpg" />
+                                    <figcaption>
+                                        <h4 class="h5 mb-0">App Design</h4>
+                                        <div>Figma</div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="https://github.com/Sankalp8080/Basic_Todo_API">
+                                <figure class="portfolio-item">
+                                    <img src="../../../assets/images/portfolio/8-small.png" data-bp="images/portfolio/8.jpg" />
+                                    <figcaption>
+                                        <h4 class="h5 mb-0">API</h4>
+                                        <div>API</div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section px-3 px-lg-4 pt-5" id="experience">
+                <div class="container-narrow">
+                    <div class="text-center mb-5">
+                        <h2 class="marker marker-center">Experience</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mb-3" data-aos="fade-right" data-aos-delay="100">
+                                <div class="card-header px-3 py-2">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h3 class="h5 mb-1">Intership In Full Stack Development</h3>
+                                            <div class="text-muted text-small">Goldmedal Electricals Pvt. Ltd. <small>(2023-2024)</small></div>
+                                        </div>
+                                        <img src="../../../assets/images/services/office.png" width="48" height="48" alt="ui-ux" />
+                                    </div>
+                                </div>
+                                <div class="card-body px-3 py-2">
+                                    <p>I contribute to Goldmedal Electrical Pvt. Ltd. as a full stack developer specializing in Dot Net. Here, I've embraced various technologies including web form and win form in ASP.NET, as well as delving into cross-platform app development with ASP.NET Maui. Additionally, I've honed my skills in REST API integration and advanced SQL techniques, along with learning the intricacies of hosting. My journey here has been both enriching and rewarding.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mb-3" data-aos="fade-left" data-aos-delay="300">
+                                <div class="card-header px-3 py-2">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h3 class="h5 mb-1">Software Developer</h3>
+                                            <div class="text-muted text-small">Goldmedal Electricals Pvt. Ltd <small>(2024-Present)</small></div>
+                                        </div>
+                                        <img src="../../../assets/images/services/office.png" width="48" height="48" alt="app development" />
+                                    </div>
+                                </div>
+                                <div class="card-body px-3 py-2">
+                                    <p>
+                                        <b>ERP System Enhancement:</b>
+                                        Contributed to the development of a new module for an existing ERP system. This involved designing and implementing webpages using ASP.NET, DevExpress controls, and SQL Server to enhance functionality and user experience.
+  <br />
+                                        <b>Distributor Management System (DMS):</b>
+                                        Served as a Full Stack Developer, responsible for both the front-end and back-end development of the application. This included designing responsive webpages and implementing business logic using technologies such as HTML5, CSS3, jQuery, ASP.NET, API integration, and SQL Server.
+  <br />
+                                        <b>Power BI Dashboard Development:</b>
+                                        Developed and maintained interactive dashboards for various business domains, including ERP, sales, and product divisions like FAN, Lighting, and Wire. Leveraged Power BI to provide insightful data visualization and reporting for better decision-making.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
 
             <div class="section px-2 px-lg-4 pb-4 pt-5 mb-5" id="contact">
                 <div class="container-narrow">
@@ -447,29 +455,34 @@
                     <div class="row">
                         <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
                             <div class="bg-light my-2 p-3 pt-2">
-                                <form action="https://formspree.io/your@email.com"
-                                    method="POST">
-                                    <div class="form-group my-2">
-                                        <label for="name" class="form-label fw-bolder">Name</label>
-                                        <input class="form-control" type="text" id="name" name="name" required>
-                                    </div>
-                                    <div class="form-group my-2">
-                                        <label for="email" class="form-label fw-bolder">Email</label>
-                                        <input class="form-control" type="email" id="email" name="_replyto" required>
-                                    </div>
-                                    <div class="form-group my-2">
-                                        <label for="message" class="form-label fw-bolder">Message</label>
-                                        <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4" required></textarea>
-                                    </div>
-                                    <button class="btn btn-primary mt-2" type="submit">Send</button>
-                                </form>
+                                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                                    <ContentTemplate>
+
+                                        <div class="form-group my-2">
+                                            <label for="name" class="form-label fw-bolder">Name</label>
+                                            <asp:TextBox ID="txtName" runat="server" CssClass="form-control" TextMode="SingleLine" ClientIDMode="Static"></asp:TextBox>
+
+                                        </div>
+                                        <div class="form-group my-2">
+                                            <label for="email" class="form-label fw-bolder">Email</label>
+                                            <asp:TextBox ID="txtEmail" runat="server" TextMode="Email" CssClass="form-control" ClientIDMode="Static"></asp:TextBox>
+                                        </div>
+                                        <div class="form-group my-2">
+                                            <label for="message" class="form-label fw-bolder">Message</label>
+                                            <asp:TextBox ID="txtMessage" TextMode="MultiLine" runat="server" ClientIDMode="Static" CssClass="form-control"></asp:TextBox>
+                                        </div>
+                                        <button class="btn btn-primary mt-2" type="submit" onclick="btnSubmitClick();">Send</button>
+
+                                    </ContentTemplate>
+                                </asp:UpdatePanel>
+
                             </div>
                         </div>
                         <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
                             <div class="mt-3 px-1">
                                 <div class="h5">Let’s talk how I can help you!</div>
                                 <p>If you like my work and want to avail my services then drop me a message using the contact form. </p>
-                                <p>Or get in touch using my email, skype or my contact number.</p>
+                                <p>Or get in touch using my email.</p>
                                 <p>See you!</p>
                             </div>
                             <div class="mt-53 px-1">
@@ -478,19 +491,7 @@
                                         <div class="pb-1">Email:</div>
                                     </div>
                                     <div class="col-sm-10">
-                                        <div class="pb-1 fw-bolder">walter@company.com</div>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <div class="pb-1">Skype:</div>
-                                    </div>
-                                    <div class="col-sm-10">
-                                        <div class="pb-1 fw-bolder">username@skype.com</div>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <div class="pb-1">Phone:</div>
-                                    </div>
-                                    <div class="col-sm-10">
-                                        <div class="pb-1 fw-bolder">+0718-111-0011</div>
+                                        <div class="pb-1 fw-bolder">sankalppanchal8080@gmail.com</div>
                                     </div>
                                 </div>
                             </div>
